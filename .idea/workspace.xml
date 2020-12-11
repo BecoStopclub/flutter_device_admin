@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afd73aff-afda-4d13-853b-642b4a98ddb9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/br/com/stopclub/flutter_device_admin/FlutterDeviceAdminPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/br/com/stopclub/flutter_device_admin/FlutterDeviceAdminPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_device_admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_device_admin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_device_admin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_device_admin.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/xml/policies.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
