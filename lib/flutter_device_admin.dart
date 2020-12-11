@@ -36,6 +36,26 @@ class FlutterDeviceAdmin {
     return false;
   }
 
+  static Future<bool> get disable async {
+    try {
+      final result = await _channel.invokeMethod<bool>("disable");
+      return result;
+    } on PlatformException catch (e) {
+      print("Failed to Invoke: '${e.message}'.");
+    }
+    return false;
+  }
+
+  static Future<bool> get lock async {
+    try {
+      final result = await _channel.invokeMethod<bool>("lock");
+      return result;
+    } on PlatformException catch (e) {
+      print("Failed to Invoke: '${e.message}'.");
+    }
+    return false;
+  }
+
   static StreamController<int> _onWrongPassword2Controller;
 
   static StreamController<int> get onWrongPassword2 {

@@ -93,11 +93,33 @@ public class FlutterDeviceAdminPlugin implements FlutterPlugin, ActivityAware, M
                 result.success(isEnabled);
                 break;
             case "enable":
-                enabledMethodChannelResult = result;
-                Intent intent = new Intent(DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN);
-                intent.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN, compName);
-                intent.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION, "Precisamos de autorização para saber quando tentativas de acesso incorretas forem feitas.");
-                activity.startActivityForResult(intent, 1);
+                if (compName != null) {
+                    enabledMethodChannelResult = result;
+                    Intent intent = new Intent(DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN);
+                    intent.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN, compName);
+                    intent.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION, "Precisamos de autorização para saber quando tentativas de acesso incorretas forem feitas.");
+                    activity.startActivityForResult(intent, 1);
+                }
+                break;
+            case "disable":
+                if (compName != null && deviceManager.isAdminActive(compName)) {
+                    try {
+                        deviceManager.removeActiveAdmin(compName);
+                        result.success(true);
+                    } catch (Exception ignored) {
+                        result.success(false);
+                    }
+                } else {
+                    result.success(true);
+                }
+                break;
+            case "lock":
+                try {
+                    deviceManager.lockNow();
+                    result.success(true);
+                } catch (Exception ignore) {
+                    result.success(false);
+                }
                 break;
             default:
                 result.notImplemented();
