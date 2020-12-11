@@ -36,6 +36,7 @@ public class FlutterDeviceAdminPlugin implements FlutterPlugin, ActivityAware, M
     private MethodChannel.Result enabledMethodChannelResult;
 
     // Events
+    private EventChannel eventChannel;
     private static EventChannel.EventSink _events;
     private static final Handler mainHandler = new Handler(Looper.getMainLooper());
 
@@ -62,11 +63,9 @@ public class FlutterDeviceAdminPlugin implements FlutterPlugin, ActivityAware, M
             channel = new MethodChannel(messenger, "flutter_device_admin");
             channel.setMethodCallHandler(this);
 
-            /*
             // Wrong access events
-            eventChannel = new EventChannel(messenger, "br.com.stopclub.device_admin/events");
+            eventChannel = new EventChannel(messenger, "flutter_device_admin/events");
             eventChannel.setStreamHandler(this);
-            */
         }
     }
 
@@ -77,11 +76,10 @@ public class FlutterDeviceAdminPlugin implements FlutterPlugin, ActivityAware, M
             channel.setMethodCallHandler(null);
             channel = null;
         }
-        /*
         if (eventChannel != null) {
             eventChannel.setStreamHandler(null);
             eventChannel = null;
-        }*/
+        }
     }
 
     @Override
@@ -100,9 +98,6 @@ public class FlutterDeviceAdminPlugin implements FlutterPlugin, ActivityAware, M
                 intent.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN, compName);
                 intent.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION, "Precisamos de autorização para saber quando tentativas de acesso incorretas forem feitas.");
                 activity.startActivityForResult(intent, 1);
-                break;
-            case "events":
-                result.success("Não implementado !!!");
                 break;
             default:
                 result.notImplemented();

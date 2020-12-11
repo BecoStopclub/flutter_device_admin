@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="afd73aff-afda-4d13-853b-642b4a98ddb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/res/xml/policies.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/br/com/stopclub/flutter_device_admin/FlutterDeviceAdminPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/br/com/stopclub/flutter_device_admin/FlutterDeviceAdminPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_device_admin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_device_admin.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,5 +43,23 @@
       <updated>1607648163320</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="3017" height="398" key="GridCell.Tab.0.bottom" timestamp="1607653163651">
+      <screen x="3840" y="0" width="3072" height="1680" />
+    </state>
+    <state width="3017" height="398" key="GridCell.Tab.0.bottom/3840.0.3072.1680/0.0.2560.1400@3840.0.3072.1680" timestamp="1607653163651" />
+    <state width="3017" height="398" key="GridCell.Tab.0.center" timestamp="1607653163651">
+      <screen x="3840" y="0" width="3072" height="1680" />
+    </state>
+    <state width="3017" height="398" key="GridCell.Tab.0.center/3840.0.3072.1680/0.0.2560.1400@3840.0.3072.1680" timestamp="1607653163651" />
+    <state width="3017" height="398" key="GridCell.Tab.0.left" timestamp="1607653163651">
+      <screen x="3840" y="0" width="3072" height="1680" />
+    </state>
+    <state width="3017" height="398" key="GridCell.Tab.0.left/3840.0.3072.1680/0.0.2560.1400@3840.0.3072.1680" timestamp="1607653163651" />
+    <state width="3017" height="398" key="GridCell.Tab.0.right" timestamp="1607653163651">
+      <screen x="3840" y="0" width="3072" height="1680" />
+    </state>
+    <state width="3017" height="398" key="GridCell.Tab.0.right/3840.0.3072.1680/0.0.2560.1400@3840.0.3072.1680" timestamp="1607653163651" />
   </component>
 </project>

@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 
 class FlutterDeviceAdmin {
   static const MethodChannel _channel = const MethodChannel('flutter_device_admin');
+  static const EventChannel _eventsChannel = const EventChannel('flutter_device_admin/events');
 
   static Future<String> get platformVersion async {
     try {
@@ -35,7 +36,8 @@ class FlutterDeviceAdmin {
     return false;
   }
 
-/*static StreamController<int> _onWrongPassword2Controller;
+  static StreamController<int> _onWrongPassword2Controller;
+
   static StreamController<int> get onWrongPassword2 {
     if (_onWrongPassword2Controller == null || _onWrongPassword2Controller.isClosed) {
       _onWrongPassword2Controller = StreamController<int>.broadcast();
@@ -47,5 +49,5 @@ class FlutterDeviceAdmin {
       });
     }
     return _onWrongPassword2Controller;
-  }*/
+  }
 }
